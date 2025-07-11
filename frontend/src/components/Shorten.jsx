@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TextField, Button, Stack, Typography, Box, Alert } from '@mui/material';
-import api from '../api';
+import api from './api';
 
 const emptyEntry = { url: '', alias: '', validity: 30 };
 
@@ -66,12 +66,20 @@ const Shortener = () => {
         </Stack>
       </form>
 
-      {result && (
-        <Alert severity="success" sx={{ mt: 2 }}>
-          Shortened Link: <a href={result.shortLink} target="_blank" rel="noreferrer">{result.shortLink}</a><br />
-          Expires on: {new Date(result.expiry).toLocaleString()}
-        </Alert>
-      )}
+     {result && (
+  <Alert severity="success" sx={{ mt: 2 }}>
+    ✅ <strong>Short Link:</strong>{' '}
+    <a href={result.shortLink} target="_blank" rel="noopener noreferrer">
+      {result.shortLink}
+    </a>
+    <br />
+    ⏰ <strong>Valid for:</strong> {form.validity} minutes
+    <br />
+    📅 <strong>Expires at:</strong>{' '}
+    {new Date(result.expiry).toLocaleString()}
+  </Alert>
+)}
+
 
       {error && (
         <Alert severity="error" sx={{ mt: 2 }}>{error}</Alert>
