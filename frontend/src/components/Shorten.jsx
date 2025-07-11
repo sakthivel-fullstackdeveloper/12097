@@ -34,7 +34,9 @@ const Shortener = () => {
 
   return (
     <Box maxWidth="sm" mx="auto" mt={5}>
-      <Typography variant="h5" mb={2}>Simple URL Shortener</Typography>
+      <Typography variant="h5" mb={2}>
+        Simple URL Shortener
+      </Typography>
       <form onSubmit={handleSubmit}>
         <Stack spacing={2}>
           <TextField
@@ -66,23 +68,25 @@ const Shortener = () => {
         </Stack>
       </form>
 
-     {result && (
-  <Alert severity="success" sx={{ mt: 2 }}>
-    ✅ <strong>Short Link:</strong>{' '}
-    <a href={result.shortLink} target="_blank" rel="noopener noreferrer">
-    </a>
- 
-    <br />
-    ⏰ <strong>Valid for:</strong> {form.validity} minutes
-    <br />
-    📅 <strong>Expires at:</strong>{' '}
-    {new Date(result.expiry).toLocaleString()}
-  </Alert>
-)}
-
+      {result && (
+        <Alert severity="success" sx={{ mt: 2 }}>
+          ✅ <strong>Short Link:{result.shortLink}</strong>{" "}
+          <a
+            href={result.shortLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          ></a>
+          <br />⏰ <strong>Valid for:</strong> {form.validity} minutes
+          <br />
+          📅 <strong>Expires at:</strong>{" "}
+          {new Date(result.expiry).toLocaleString()}
+        </Alert>
+      )}
 
       {error && (
-        <Alert severity="error" sx={{ mt: 2 }}>{error}</Alert>
+        <Alert severity="error" sx={{ mt: 2 }}>
+          {error}
+        </Alert>
       )}
     </Box>
   );
