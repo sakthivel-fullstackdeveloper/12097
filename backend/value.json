@@ -1,0 +1,11 @@
+{
+    "email": "sakthivel2004it@gmail.com",
+    "name": "sakthivel",
+    "rollNo": "12097",
+    "accessCode": "CWbqgK",
+    "clientID": "bb85d8e2-1d5d-4059-adc6-a5d2bfefcdeb",
+    "clientSecret": "DJrKkCWFBThnkcwc",
+    "token_type": "Bearer",
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiYXVkIjoiaHR0cDovLzIwLjI0NC41Ni4xNDQvZXZhbHVhdGlvbi1zZXJ2aWNlIiwiZW1haWwiOiJzYWt0aGl2ZWwyMDA0aXRAZ21haWwuY29tIiwiZXhwIjoxNzUyMjEzNDQwLCJpYXQiOjE3NTIyMTI1NDAsImlzcyI6IkFmZm9yZCBNZWRpY2FsIFRlY2hub2xvZ2llcyBQcml2YXRlIExpbWl0ZWQiLCJqdGkiOiI4Mjk3YzYyOS0wNzk4LTQ0ZTItOTAyMC0xZTQ0MGNkMzkyMzkiLCJsb2NhbGUiOiJlbi1JTiIsIm5hbWUiOiJzYWt0aGl2ZWwiLCJzdWIiOiJiYjg1ZDhlMi0xZDVkLTQwNTktYWRjNi1hNWQyYmZlZmNkZWIifSwiZW1haWwiOiJzYWt0aGl2ZWwyMDA0aXRAZ21haWwuY29tIiwibmFtZSI6InNha3RoaXZlbCIsInJvbGxObyI6IjEyMDk3IiwiYWNjZXNzQ29kZSI6IkNXYnFnSyIsImNsaWVudElEIjoiYmI4NWQ4ZTItMWQ1ZC00MDU5LWFkYzYtYTVkMmJmZWZjZGViIiwiY2xpZW50U2VjcmV0IjoiREpyS2tDV0ZCVGhua2N3YyJ9.h5DiyFOJ8uJrN91YRv9Z7H-R4mx6wqnizNzmL46zQFc",
+    "expires_in": 1752213440
+}
