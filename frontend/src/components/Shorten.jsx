@@ -70,9 +70,8 @@ const Shortener = () => {
   <Alert severity="success" sx={{ mt: 2 }}>
     ✅ <strong>Short Link:</strong>{' '}
     <a href={result.shortLink} target="_blank" rel="noopener noreferrer">
-      {result}
     </a>
-    {alert(result)}
+ 
     <br />
     ⏰ <strong>Valid for:</strong> {form.validity} minutes
     <br />
