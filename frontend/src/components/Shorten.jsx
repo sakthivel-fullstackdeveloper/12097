@@ -53,7 +53,7 @@ const Shortener = () => {
             onChange={handleChange}
           />
           <TextField
-            label="Validity (days)"
+            label="Validity (time)"
             name="validity"
             type="number"
             inputProps={{ min: 1 }}
@@ -70,8 +70,9 @@ const Shortener = () => {
   <Alert severity="success" sx={{ mt: 2 }}>
     ✅ <strong>Short Link:</strong>{' '}
     <a href={result.shortLink} target="_blank" rel="noopener noreferrer">
-      {result.shortLink}
+      {result}
     </a>
+    {alert(result)}
     <br />
     ⏰ <strong>Valid for:</strong> {form.validity} minutes
     <br />

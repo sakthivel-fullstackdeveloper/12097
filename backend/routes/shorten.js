@@ -39,5 +39,15 @@ router.post("/shortenurl", async (req, res) => {
   }
 });
 
+router.get("/:shortcode", async (req, res) => {
+  try {
+    const { shortcode } = req.params;
+    const nav = await Url.findOne({ shortcode });
+    const link = nav.url;
+    res.redirect(link);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Server error." });
+  }
+});
 module.exports = router;
-
